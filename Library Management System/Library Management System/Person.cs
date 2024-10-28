@@ -75,7 +75,7 @@ internal class Book : LibraryItem
 
     public override void DisplayInfo()
     {
-        Console.WriteLine(Genre);
+        Console.WriteLine(Genre + " " + Location.Shelf + " " + Location.Aisle);
     }
 }
 
@@ -91,7 +91,7 @@ internal class Magazine : LibraryItem
 
     public override void DisplayInfo()
     {
-        Console.WriteLine();
+        Console.WriteLine(Location.Shelf + " " + Location.Aisle);
     }
 }
 
@@ -107,7 +107,7 @@ internal class DVD : LibraryItem
 
     public override void DisplayInfo()
     {
-        Console.WriteLine();
+        Console.WriteLine(Location.Shelf + " " + Location.Aisle);
     }
 }
 
